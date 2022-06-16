@@ -173,27 +173,27 @@ local selfdestructsave = coroutine.create(function()
 end)
 local GUI = GuiLibrary.CreateMainWindow()
 local Combat = GuiLibrary.CreateWindow({
-	["Name"] = "Combat", 
+	["Name"] = "Mortal Combat", 
 	["Icon"] = "vape/assets/CombatIcon.png", 
 	["IconSize"] = 15
 })
 local Blatant = GuiLibrary.CreateWindow({
-	["Name"] = "Blatant", 
+	["Name"] = "Blatant Mode", 
 	["Icon"] = "vape/assets/BlatantIcon.png", 
 	["IconSize"] = 16
 })
 local Render = GuiLibrary.CreateWindow({
-	["Name"] = "Render", 
+	["Name"] = "Render BOI!!!!!!", 
 	["Icon"] = "vape/assets/RenderIcon.png", 
 	["IconSize"] = 17
 })
 local Utility = GuiLibrary.CreateWindow({
-	["Name"] = "Utility", 
+	["Name"] = "Excelent KO", 
 	["Icon"] = "vape/assets/UtilityIcon.png", 
 	["IconSize"] = 17
 })
 local World = GuiLibrary.CreateWindow({
-	["Name"] = "World", 
+	["Name"] = "World Miss You", 
 	["Icon"] = "vape/assets/WorldIcon.png", 
 	["IconSize"] = 16
 })
@@ -209,31 +209,31 @@ local Profiles = GuiLibrary.CreateWindow2({
 })
 GUI.CreateDivider()
 GUI.CreateButton({
-	["Name"] = "Combat", 
+	["Name"] = "Mortal Combat", 
 	["Function"] = function(callback) Combat.SetVisible(callback) end, 
 	["Icon"] = "vape/assets/CombatIcon.png", 
 	["IconSize"] = 15
 })
 GUI.CreateButton({
-	["Name"] = "Blatant", 
+	["Name"] = "Blatant Mode", 
 	["Function"] = function(callback) Blatant.SetVisible(callback) end, 
 	["Icon"] = "vape/assets/BlatantIcon.png", 
 	["IconSize"] = 16
 })
 GUI.CreateButton({
-	["Name"] = "Render", 
+	["Name"] = "Render BOI!!!!!!", 
 	["Function"] = function(callback) Render.SetVisible(callback) end, 
 	["Icon"] = "vape/assets/RenderIcon.png", 
 	["IconSize"] = 17
 })
 GUI.CreateButton({
-	["Name"] = "Utility", 
+	["Name"] = "Excelent KO", 
 	["Function"] = function(callback) Utility.SetVisible(callback) end, 
 	["Icon"] = "vape/assets/UtilityIcon.png", 
 	["IconSize"] = 17
 })
 GUI.CreateButton({
-	["Name"] = "World", 
+	["Name"] = "World Miss You", 
 	["Function"] = function(callback) World.SetVisible(callback) end, 
 	["Icon"] = "vape/assets/WorldIcon.png", 
 	["IconSize"] = 16
@@ -1224,29 +1224,29 @@ local blatantmode = GUI.CreateToggle({
 	["HoverText"] = "Required for certain features."
 })
 local tabsortorder = {
-	["CombatButton"] = 1,
-	["BlatantButton"] = 2,
-	["RenderButton"] = 3,
-	["UtilityButton"] = 4,
-	["WorldButton"] = 5,
+	["MortalCombatButton"] = 1,
+	["BlatantModeButton"] = 2,
+	["RenderBOI!!!!!!Button"] = 3,
+	["ExcelentKOButton"] = 4,
+	["WorldMissYouButton"] = 5,
 	["FriendsButton"] = 6,
 	["ProfilesButton"] = 7
 }
 
 local tabsortorder2 = {
-	[1] = "Combat",
-	[2] = "Blatant",
-	[3] = "Render",
-	[4] = "Utility",
-	[5] = "World"
+	[1] = "Mortal Combat",
+	[2] = "Blatant Mode",
+	[3] = "Render BOI!!!!!!",
+	[4] = "Excelent KO",
+	[5] = "World Miss You"
 }
 
 local tabcategorycolor = {
-	["CombatWindow"] = Color3.fromRGB(214, 27, 6),
-	["BlatantWindow"] = Color3.fromRGB(219, 21, 133),
-	["RenderWindow"] = Color3.fromRGB(135, 14, 165),
-	["UtilityWindow"] = Color3.fromRGB(27, 145, 68),
-	["WorldWindow"] = Color3.fromRGB(70, 73, 16)
+	["MortalCombatWindow"] = Color3.fromRGB(214, 27, 6),
+	["BlatantModeWindow"] = Color3.fromRGB(219, 21, 133),
+	["RenderBOI!!!!!!Window"] = Color3.fromRGB(135, 14, 165),
+	["ExcelentKOWindow"] = Color3.fromRGB(27, 145, 68),
+	["WorldMissYouWindow"] = Color3.fromRGB(70, 73, 16)
 }
 
 GuiLibrary["UpdateUI"] = function()
